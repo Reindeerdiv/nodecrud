@@ -41,7 +41,7 @@ app.use(
     
     connection(mysql,{
         
-        host: 'localhost', //'localhost',
+        host: '172.27.59.92', //'localhost',
         user: 'root',
         password : 'root',
         port : 3306, //port mysql
@@ -54,12 +54,12 @@ app.use(
 
 
 app.get('/', routes.index);
-app.get('/customers', customers.list);
-app.get('/customers/add', customers.add);
-app.post('/customers/add', customers.save);
-app.get('/customers/delete/:id', customers.delete_customer);
-app.get('/customers/edit/:id', customers.edit);
-app.post('/customers/edit/:id',customers.save_edit);
+app.get('/student', customers.list);
+app.get('/student/add', customers.add);
+app.post('/student/add', customers.save);
+app.get('/student/delete/:id', customers.delete_customer);
+app.get('/student/edit/:id', customers.edit);
+app.post('/student/edit/:id',customers.save_edit);
 
 
 app.use(app.router);
