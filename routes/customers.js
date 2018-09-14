@@ -7,7 +7,7 @@ exports.list = function(req, res){
 
   req.getConnection(function(err,connection){
        
-        var query = connection.query('SELECT * FROM customer',function(err,rows)
+        var query = connection.query('SELECT * FROM info',function(err,rows)
         {
             
             if(err)
@@ -21,7 +21,7 @@ exports.list = function(req, res){
          
          //console.log(query.sql);
     });
-  
+
 };
 
 exports.add = function(req, res){
@@ -34,7 +34,7 @@ exports.edit = function(req, res){
     
     req.getConnection(function(err,connection){
        
-        var query = connection.query('SELECT * FROM customer WHERE id = ?',[id],function(err,rows)
+        var query = connection.query('SELECT * FROM info WHERE id = ?',[id],function(err,rows)
         {
             
             if(err)
@@ -65,7 +65,7 @@ exports.save = function(req,res){
         
         };
         
-        var query = connection.query("INSERT INTO customer set ? ",data, function(err, rows)
+        var query = connection.query("INSERT INTO info set ? ",data, function(err, rows)
         {
   
           if (err)
@@ -96,7 +96,7 @@ exports.save_edit = function(req,res){
         
         };
         
-        connection.query("UPDATE customer set ? WHERE id = ? ",[data,id], function(err, rows)
+        connection.query("UPDATE info set ? WHERE id = ? ",[data,id], function(err, rows)
         {
   
           if (err)
@@ -116,7 +116,7 @@ exports.delete_customer = function(req,res){
     
      req.getConnection(function (err, connection) {
         
-        connection.query("DELETE FROM customer  WHERE id = ? ",[id], function(err, rows)
+        connection.query("DELETE FROM info  WHERE id = ? ",[id], function(err, rows)
         {
             
              if(err)

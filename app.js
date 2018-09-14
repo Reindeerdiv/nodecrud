@@ -41,11 +41,11 @@ app.use(
     
     connection(mysql,{
         
-        host: 'localhost', //'localhost',
+        host: 'studentapplication-dev.cr2pxy6w4r0h.us-east-1.rds.amazonaws.com', //'localhost',
         user: 'root',
-        password : 'root',
+        password : 'root12345678',
         port : 3306, //port mysql
-        database:'nodejs_student'
+        database:'StudentAppDev'
 
     },'pool') //or single
 
