@@ -54,7 +54,7 @@ app.use(
 
 
 app.get('/', routes.index);
-app.get('/student', customers.list);
+app.get('/students', customers.list);
 app.get('/student/add', customers.add);
 app.post('/student/add', customers.save);
 app.get('/student/delete/:id', customers.delete_customer);
