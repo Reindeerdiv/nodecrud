@@ -41,7 +41,7 @@ app.use(
     
     connection(mysql,{
         
-        host: 'studentapplication-dev.cr2pxy6w4r0h.us-east-1.rds.amazonaws.com', //'localhost',
+        host: 'student-app-fe.cewdgowawpaj.us-east-1.rds.amazonaws.com', //'localhost',
         user: 'root',
         password : 'root12345678',
         port : 3306, //port mysql
