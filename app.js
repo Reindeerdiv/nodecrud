@@ -41,11 +41,11 @@ app.use(
     
     connection(mysql,{
         
-        host: 'student-app-fe.cewdgowawpaj.us-east-1.rds.amazonaws.com', //'localhost',
+        host: 'localhost', //'localhost',
         user: 'root',
-        password : 'root12345678',
+        password : 'root',
         port : 3306, //port mysql
-        database:'StudentAppDev'
+        database:'db_student'
 
     },'pool') //or single
 
@@ -55,11 +55,11 @@ app.use(
 
 app.get('/', routes.index);
 app.get('/students', customers.list);
-app.get('/student/add', customers.add);
-app.post('/student/add', customers.save);
+//app.get('/student/add', customers.add);
+app.post('/student/add', customers.add);
 app.get('/student/delete/:id', customers.delete_customer);
 app.get('/student/edit/:id', customers.edit);
-app.post('/student/edit/:id',customers.save_edit);
+//app.post('/student/edit/:id',customers.save_edit);
 
 
 app.use(app.router);

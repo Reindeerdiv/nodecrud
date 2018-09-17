@@ -24,9 +24,9 @@ exports.list = function(req, res){
 
 };
 
-exports.add = function(req, res){
+/*exports.add = function(req, res){
   res.render('add_customer',{page_title:"Add Customers - Node.js"});
-};
+};*/
 
 exports.edit = function(req, res){
     
@@ -34,13 +34,13 @@ exports.edit = function(req, res){
     
     req.getConnection(function(err,connection){
        
-        var query = connection.query('SELECT * FROM info WHERE id = ?',[id],function(err,rows)
+        var query = connection.query('SELECT * FROM info WHERE rollnumber = ?',[id],function(err,rows)
         {
             
             if(err)
                 console.log("Error Selecting : %s ",err );
-     
-            res.render('edit_customer',{page_title:"Edit Customers - Node.js",data:rows});
+
+            res.send(rows);
                 
            
          });
@@ -50,7 +50,7 @@ exports.edit = function(req, res){
 };
 
 /*Save the customer*/
-exports.save = function(req,res){
+exports.add = function(req,res){
     
     var input = JSON.parse(JSON.stringify(req.body));
     
@@ -58,11 +58,12 @@ exports.save = function(req,res){
         
         var data = {
             
-            name    : input.name,
-            address : input.address,
-            email   : input.email,
-            phone   : input.phone 
-        
+            rollnumber    : input.rollnumber,
+            firstname : input. firstname,
+            lastname   : input.lastname,
+            city   : input.city,
+            college   : input.college
+
         };
         
         var query = connection.query("INSERT INTO info set ? ",data, function(err, rows)
@@ -71,7 +72,7 @@ exports.save = function(req,res){
           if (err)
               console.log("Error inserting : %s ",err );
          
-          res.redirect('/customers');
+          res.redirect('/students');
           
         });
         
@@ -80,34 +81,34 @@ exports.save = function(req,res){
     });
 };
 
-exports.save_edit = function(req,res){
-    
+/*exports.save_edit = function(req,res){
+
     var input = JSON.parse(JSON.stringify(req.body));
     var id = req.params.id;
-    
+
     req.getConnection(function (err, connection) {
-        
+
         var data = {
-            
+
             name    : input.name,
             address : input.address,
             email   : input.email,
-            phone   : input.phone 
-        
+            phone   : input.phone
+
         };
-        
+
         connection.query("UPDATE info set ? WHERE id = ? ",[data,id], function(err, rows)
         {
-  
+
           if (err)
               console.log("Error Updating : %s ",err );
-         
+
           res.redirect('/customers');
-          
+
         });
-    
+
     });
-};
+};*/
 
 
 exports.delete_customer = function(req,res){
@@ -116,13 +117,13 @@ exports.delete_customer = function(req,res){
     
      req.getConnection(function (err, connection) {
         
-        connection.query("DELETE FROM info  WHERE id = ? ",[id], function(err, rows)
+        connection.query("DELETE FROM info  WHERE rollnumber = ? ",[id], function(err, rows)
         {
             
              if(err)
                  console.log("Error deleting : %s ",err );
             
-             res.redirect('/customers');
+             res.redirect('/students');
              
         });
         
