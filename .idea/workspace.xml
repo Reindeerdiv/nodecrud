@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b838265-c73f-4771-a026-bb21ed1f35c8" name="Default Changelist" comment="" />
+    <list default="true" id="6b838265-c73f-4771-a026-bb21ed1f35c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +35,9 @@
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.53" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -78,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+            <state relative-caret-position="510">
+              <caret line="57" column="3" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -143,8 +148,8 @@
       <list>
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/Dockerfile" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/customers.js" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -173,7 +178,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,7 +195,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -199,7 +204,7 @@
     <property name="SearchEverywhereHistoryKey" value="plugins&#9;ACTION&#9;WelcomeScreen.Plugins" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537187605089" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537277254184" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -250,6 +255,8 @@
       <workItem from="1536906537228" duration="6202000" />
       <workItem from="1537158641016" duration="6604000" />
       <workItem from="1537247619166" duration="606000" />
+      <workItem from="1537275973415" duration="1280000" />
+      <workItem from="1537346069179" duration="50000" />
     </task>
     <task id="LOCAL-00001" summary="changed render to json">
       <created>1536823286938</created>
@@ -311,14 +318,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20433000" />
+    <option name="totallyTimeSpent" value="21763000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1234" height="1040" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49506578" visible="true" weight="0.2589438" />
-      <window_info id="Structure" order="1" sideWeight="0.5049342" side_tool="true" visible="true" weight="0.2589438" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49122807" visible="true" weight="0.25979558" />
+      <window_info id="Structure" order="1" sideWeight="0.50877196" side_tool="true" visible="true" weight="0.25979558" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -335,8 +342,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49914822" weight="0.3289183" />
       <window_info anchor="bottom" id="Database Changes" order="8" sideWeight="0.49914822" weight="0.3289183" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.52640545" weight="0.3289183" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5068143" side_tool="true" visible="true" weight="0.3289183" />
-      <window_info active="true" anchor="bottom" id="Docker" order="11" sideWeight="0.4931857" visible="true" weight="0.3289183" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50851786" side_tool="true" visible="true" weight="0.307947" />
+      <window_info active="true" anchor="bottom" id="Docker" order="11" sideWeight="0.4914821" visible="true" weight="0.307947" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -344,7 +351,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.06558774" />
+      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.06303237" />
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
@@ -406,8 +413,8 @@
     <entry file="file://$PROJECT_DIR$/routes/Dockerfile" />
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+        <state relative-caret-position="510">
+          <caret line="57" column="3" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
         </state>
       </provider>
     </entry>
