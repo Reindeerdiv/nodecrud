@@ -25,7 +25,7 @@
       "memory": null,
       "memoryReservation": 300,
       "volumesFrom": [],
-      "image": "divya12/studentapp_backend:5",
+      "image": "divya12/studentapp_backend:v_%BUILD_NUMBER%",
       "disableNetworking": null,
       "interactive": null,
       "healthCheck": null,
