@@ -1,6 +1,6 @@
 
 {
-  "executionRoleArn": "arn:aws:iam::950421538861:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::525961791549:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
@@ -48,8 +48,8 @@
   "compatibilities": [
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:950421538861:task-definition/nodebe:2",
-  "family": "nodebe",
+ 
+  "family": "studentapplication_backend",
   "requiresCompatibilities": [
     "EC2"
   ],
