@@ -13,42 +13,12 @@
           "containerPort": 80
         }
       ],
-      "command": null,
-      "linuxParameters": null,
-      "cpu": 0,
-      "environment": [],
-      "ulimits": null,
-      "dnsServers": null,
-      "mountPoints": [],
-      "workingDirectory": null,
-      "dockerSecurityOptions": null,
-      "memory": null,
       "memoryReservation": 300,
-      "volumesFrom": [],
       "image": "shubhamgorlewar/nodeapplication:v_%BUILD_NUMBER%",
-      "disableNetworking": null,
-      "interactive": null,
-      "healthCheck": null,
-      "essential": true,
-      "links": null,
-      "hostname": null,
-      "extraHosts": null,
-      "pseudoTerminal": null,
-      "user": null,
-      "readonlyRootFilesystem": null,
-      "dockerLabels": null,
-      "systemControls": null,
-      "privileged": null,
       "name": "backend_app"
     }
   ],
-  "placementConstraints": [],
-  "memory": null,
-  "taskRoleArn": null,
-  "compatibilities": [
-    "EC2"
-  ],
- 
+  
   "family": "studentapplication_backend",
   "requiresCompatibilities": [
     "EC2"
@@ -57,3 +27,4 @@
   "cpu": null,
   "volumes": []
 }
+
