@@ -3,10 +3,7 @@
   "executionRoleArn": "arn:aws:iam::525961791549:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
-      "dnsSearchDomains": null,
-      "logConfiguration": null,
-      "entryPoint": null,
-      "portMappings": [
+         "portMappings": [
         {
           "hostPort": 80,
           "protocol": "tcp",
@@ -24,7 +21,6 @@
     "EC2"
   ],
   "networkMode": "awsvpc",
-  "cpu": null,
-  "volumes": []
+   "volumes": []
 }
 
